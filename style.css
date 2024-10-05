@@ -13,21 +13,22 @@
 
 header {
     width: 100vw;
+    height: 130px;
     box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.24);
     background-color: var(--cor-seccundary);
-}
-
-img {
-    display: block;
-    margin: auto;
-    filter: drop-shadow(3px 3px 2px rgba(255, 255, 255, 0.466));
+    background-image: url(assets/logo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 270px;
+    overflow: hidden;
 }
 
 h1 {
     color: #fff;
-    font-size: 2em;
+    font-size: 1.7em;
     text-align: center;
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.418);
+    box-shadow:  1px 3px 2px rgba(0, 0, 0, 0.24);
     width: 80%;
     margin: auto;
     padding: 5px;
@@ -40,6 +41,8 @@ table {
     margin: auto;
     margin-top: 30px;
     margin-bottom: 30px;
+    border-radius: 3px;
+    overflow: hidden;
     border-collapse: collapse;
 }
 
@@ -51,16 +54,17 @@ th {
 td {
     border: 1px solid black;
     height: 35px;
+    padding: 4px;
     text-align: center;
     vertical-align: middle;
 }
 
 td button {
-    display: inline-block;
+    display: block;
     height: 30px;
-    width: 30px;
+    width: 100%;
+    margin-top: 3px;
     border: none;
-    margin-left: 5px;
     background-color: rgba(255, 255, 255, 0);
     cursor: pointer;
 }
@@ -151,10 +155,10 @@ td button {
 footer {
     font-weight: normal;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.205);
-    font-size: 1.1em;
+    font-size: 1em;
     color: var(--cor-priary);
     width: 100vw;
-    padding: 15px 0 15px 0;
+    padding: 5px 0 5px 0;
     background-color: var(--cor-seccundary);
     display: flex;
     z-index: 40;
