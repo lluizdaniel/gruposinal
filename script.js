@@ -47,7 +47,7 @@ function openMoldal (){
 }
 
 enviar.addEventListener("click", function(event){
-    const phone = "11947718966"
+    const phone = "947718966"
     window.open(`https://wa.me/${phone}?text=A requisição do código:  ${requisicao.codigo}, gerado na data: ${requisicao.data}, da loja ${requisicao.loja} está ${observacao.value}`, "_blank")
 })
 
