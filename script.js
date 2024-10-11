@@ -2,6 +2,7 @@ const tabela = document.getElementById("tabela")
 const moldal = document.getElementById("moldal");
 const cartItems = document.getElementById("cart-items")
 const observacao = document.getElementById("observacao")
+const obervacaoEsc = document.getElementById("observacao-esc")
 const fechar = document.getElementById("bt-fechar");
 const enviar = document.getElementById("bt-enviar")
 
@@ -48,7 +49,7 @@ function openMoldal (){
 
 enviar.addEventListener("click", function(event){
     const phone = "947718966"
-    window.open(`https://wa.me/${phone}?text=A requisição do código:  ${requisicao.codigo}, gerado na data: ${requisicao.data}, da loja ${requisicao.loja} está ${observacao.value}`, "_blank")
+    window.open(`https://wa.me/${phone}?text=A requisição do código:  ${requisicao.codigo}, gerado na data: ${requisicao.data}, da loja ${requisicao.loja} está ${observacao.value}, observação: ${obervacaoEsc.value}`, "_blank")
 })
 
 moldal.addEventListener("click", function(event){
